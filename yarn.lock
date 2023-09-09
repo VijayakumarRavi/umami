@@ -8200,15 +8200,13 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-basics@^0.77.0:
-  version "0.77.0"
-  resolved "https://registry.yarnpkg.com/react-basics/-/react-basics-0.77.0.tgz#31d35b4db8119c699eeab24a7cab10a613b549f4"
-  integrity sha512-L14dZqlg7P9m700OvND1fsdZA/vvLH3W0Ntw5Oyk2RxE47K6oMESSuPhDi1yC2QjDYwFdKzGSsgJGfWlc++Kww==
+react-basics@^0.98.0:
+  version "0.98.0"
+  resolved "https://registry.yarnpkg.com/react-basics/-/react-basics-0.98.0.tgz#b207bedbd9dac749d28ea6de2197a0efe648b78c"
+  integrity sha512-ebUigu+s6Iusq14EZTFTTUzdDPYFQEZjeD4feeq3o7dE+ndOVnajEdQ2va/x6CsRBUsWgjLJipfQi0XIrxYupA==
   dependencies:
     classnames "^2.3.1"
     date-fns "^2.29.3"
-    react "^18.2.0"
-    react-dom "^18.2.0"
     react-hook-form "^7.34.2"
     react-spring "^9.5.5"
     react-window "^1.8.6"
