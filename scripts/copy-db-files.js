@@ -22,7 +22,7 @@ if (!databaseType || !['mysql', 'postgresql'].includes(databaseType)) {
 
 console.log(`Database type detected: ${databaseType}`);
 
-const src = path.resolve(__dirname, `../db/${databaseType}`);
+const src = path.resolve(__dirname, '../db/cockroachdb');
 const dest = path.resolve(__dirname, '../prisma');
 
 del.sync(dest);
