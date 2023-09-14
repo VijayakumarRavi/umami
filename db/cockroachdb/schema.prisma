@@ -91,7 +91,7 @@ model WebsiteEvent {
   referrerQuery  String?   @map("referrer_query") @db.String(500)
   referrerDomain String?   @map("referrer_domain") @db.String(500)
   pageTitle      String?   @map("page_title") @db.String(500)
-  eventType      Int       @default(1) @map("event_type") @db.Int8
+  eventType      Int       @default(1) @map("event_type") @db.Int4
   eventName      String?   @map("event_name") @db.String(50)
 
   eventData EventData[]
@@ -118,7 +118,7 @@ model EventData {
   stringValue    String?   @map("string_value") @db.String(500)
   numberValue    Decimal?  @map("number_value") @db.Decimal(19, 4)
   dateValue      DateTime? @map("date_value") @db.Timestamptz(6)
-  dataType       Int       @map("data_type") @db.Int8
+  dataType       Int       @map("data_type") @db.Int4
   createdAt      DateTime? @default(now()) @map("created_at") @db.Timestamptz(6)
 
   website      Website      @relation(fields: [websiteId], references: [id])
@@ -140,7 +140,7 @@ model SessionData {
   stringValue String?   @map("string_value") @db.String(500)
   numberValue Decimal?  @map("number_value") @db.Decimal(19, 4)
   dateValue   DateTime? @map("date_value") @db.Timestamptz(6)
-  dataType    Int       @map("data_type") @db.Int8
+dataType    Int       @map("data_type") @db.Int4
   createdAt   DateTime? @default(now()) @map("created_at") @db.Timestamptz(6)
   deletedAt   DateTime? @default(now()) @map("deleted_at") @db.Timestamptz(6)
 
